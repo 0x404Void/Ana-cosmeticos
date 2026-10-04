@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Cosméticos — Qualidade e Preço de Diamante | Itapipoca</title>
+  <meta name="description" content="As melhores marcas de perfumaria e cosméticos em Itapipoca: O Boticário, Natura, Avon, Eudora. À pronta entrega e por encomenda, com delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <a href="#inicio" class="marca">
+        <!-- LOGO: troque este SVG por <img src="../imagens/logo.png"> se tiver uma imagem -->
+        <svg width="44" height="44" viewBox="0 0 100 100" aria-label="Ana Perfumaria e Cosméticos">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#e8cf8f" /><stop offset=".5" stop-color="#c9a227" /><stop offset="1" stop-color="#e8cf8f" />
+            </linearGradient>
+            <path id="circ1" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="none" stroke="url(#g1)" stroke-width="1.5" />
+          <circle cx="50" cy="50" r="30" fill="none" stroke="url(#g1)" stroke-width=".8" />
+          <text font-size="7.2" letter-spacing="1.3" fill="url(#g1)" font-family="Jost"><textPath href="#circ1">ANA PERFUMARIA E COSMÉTICOS • ANA PERFUMARIA E COSMÉTICOS •</textPath></text>
+          <text x="50" y="62" text-anchor="middle" font-size="38" font-style="italic" font-family="Cormorant Garamond" fill="url(#g1)">A</text>
+        </svg>
+        <span class="marca-nome">Ana <span class="dourado">Cosméticos</span></span>
+      </a>
+
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn btn-marinho btn-pedido" href="https://wa.me/558896449335?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noreferrer">Fazer Pedido</a>
+
+      <button class="btn-carrinho" id="btnCarrinho" aria-label="Abrir carrinho">
+        🛒<span class="contador" id="contadorCarrinho">0</span>
+      </button>
+
+      <button class="btn-menu" id="btnMenu" aria-label="Menu">☰</button>
+    </div>
+    <div class="menu-mobile" id="menuMobile">
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- ===== BANNER PRINCIPAL ===== -->
+  <section id="inicio" class="banner">
+    <div class="container banner-grade">
+      <div class="revelar">
+        <p class="etiqueta">Perfumaria · Itapipoca – CE</p>
+        <h1>Ana Cosméticos <span class="dourado italico bloco">Qualidade e Preço de Diamante</span></h1>
+        <p class="texto-suave grande">As melhores marcas de perfumaria e cosméticos de Itapipoca, à pronta entrega e por encomenda.</p>
+        <div class="selos">
+          <span>O Boticário</span><span>Natura</span><span>Avon</span><span>Eudora</span>
+        </div>
+        <div class="acoes">
+          <a href="#catalogo" class="btn btn-dourado">Ver Catálogo</a>
+          <a href="https://wa.me/558896449335?text=Olá%20Ana%20Cosméticos!%20Gostaria%20de%20mais%20informações." target="_blank" rel="noreferrer" class="btn btn-contorno">💬 Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="revelar banner-foto">
+        <div class="moldura"></div>
+        <!-- FOTO PRINCIPAL: troque o arquivo ../imagens/hero.jpg pela sua foto -->
+        <img src="../imagens/hero.jpg" alt="Perfumes e cosméticos sobre mármore com detalhes dourados" />
+        <div class="cartao-nota">
+          <span class="nota">4.9</span>
+          <div>
+            <div class="estrelas">★★★★★</div>
+            <p class="texto-suave pequeno">Avaliações no Google</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE / SERVIÇOS ===== -->
+  <section id="sobre" class="secao secao-marinha">
+    <div class="container">
+      <div class="revelar centro">
+        <p class="etiqueta">Sobre Nós</p>
+        <h2>Uma loja local com <span class="dourado italico">padrão de diamante</span></h2>
+      </div>
+      <div class="grade grade-4">
+        <div class="revelar cartao-servico"><span class="icone">🏬</span><h3>Compra na Loja</h3><p>Visite-nos e experimente cada fragrância pessoalmente.</p></div>
+        <div class="revelar cartao-servico"><span class="icone">🚗</span><h3>Retirada Rápida</h3><p>Peça antes e retire sem sair do carro.</p></div>
+        <div class="revelar cartao-servico"><span class="icone">🚚</span><h3>Entrega em Casa</h3><p>Levamos seus favoritos até a sua porta.</p></div>
+        <div class="revelar cartao-servico"><span class="icone">💛</span><h3>Empresa de Mulheres</h3><p>Apoie um negócio local administrado por mulheres.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section id="catalogo" class="secao">
+    <div class="container">
+      <div class="revelar centro">
+        <p class="etiqueta">Catálogo</p>
+        <h2>Fragrâncias e cuidados em destaque</h2>
+      </div>
+      <div class="filtros" id="filtros">
+        <button class="ativo" data-cat="Todos">Todos</button>
+        <button data-cat="Perfumes Femininos">Perfumes Femininos</button>
+        <button data-cat="Perfumes Masculinos">Perfumes Masculinos</button>
+        <button data-cat="Cuidados com a Pele">Cuidados com a Pele</button>
+        <button data-cat="Kits Presente">Kits Presente</button>
+      </div>
+      <!-- Os produtos são gerados pelo script.js — edite a lista lá -->
+      <div class="grade grade-4" id="listaProdutos"></div>
+    </div>
+  </section>
+
+  <!-- ===== AVALIAÇÕES ===== -->
+  <section class="secao secao-creme">
+    <div class="container">
+      <div class="revelar centro">
+        <div class="estrelas grande">★★★★★</div>
+        <h2><span class="dourado">4.9</span> de 5 estrelas no Google</h2>
+        <p class="texto-suave">Com base nas avaliações dos nossos clientes</p>
+      </div>
+      <div class="grade grade-3">
+        <figure class="revelar cartao-avaliacao"><span class="aspas">“</span><blockquote>Ótimo preço e muitas opções para ficar cheirosa. Ótimos presentes.</blockquote><figcaption>— Rosilene Alves</figcaption></figure>
+        <figure class="revelar cartao-avaliacao"><span class="aspas">“</span><blockquote>Atendimento excelente, ótimo preço.</blockquote><figcaption>— Santiago Sousa</figcaption></figure>
+        <figure class="revelar cartao-avaliacao"><span class="aspas">“</span><blockquote>Ótimos preços e atendimento.</blockquote><figcaption>— Hugo Martins</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCALIZAÇÃO ===== -->
+  <section id="localizacao" class="secao">
+    <div class="container grade grade-2">
+      <div class="revelar">
+        <p class="etiqueta">Localização e Horário</p>
+        <h2>Venha nos visitar</h2>
+        <ul class="info-lista">
+          <li><span class="icone">📍</span><div>R. Pontes Neto, 2420 - Cacimbas, Itapipoca - CE, 62502-767<p class="texto-suave pequeno">Referência: localizado na Ducoco Produtos Saudáveis</p></div></li>
+          <li><span class="icone">🕕</span>Aberto até às 18h</li>
+          <li><span class="icone">📞</span><a href="https://wa.me/558896449335?text=Olá!" target="_blank" rel="noreferrer">+55 (88) 9644-9335</a></li>
+        </ul>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=R.%20Pontes%20Neto%2C%202420%20-%20Cacimbas%2C%20Itapipoca%20-%20CE%2C%2062502-767" target="_blank" rel="noreferrer" class="btn btn-dourado">Como Chegar</a>
+      </div>
+      <iframe title="Mapa" class="revelar mapa" loading="lazy" src="https://www.google.com/maps?q=R.%20Pontes%20Neto%2C%202420%2C%20Itapipoca%20-%20CE&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- ===== RODAPÉ / CONTATO ===== -->
+  <footer id="contato" class="rodape">
+    <div class="container grade grade-3">
+      <div class="marca">
+        <svg width="72" height="72" viewBox="0 0 100 100" aria-label="Ana Perfumaria e Cosméticos">
+          <defs>
+            <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#e8cf8f" /><stop offset=".5" stop-color="#c9a227" /><stop offset="1" stop-color="#e8cf8f" />
+            </linearGradient>
+            <path id="circ2" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="none" stroke="url(#g2)" stroke-width="1.5" />
+          <circle cx="50" cy="50" r="30" fill="none" stroke="url(#g2)" stroke-width=".8" />
+          <text font-size="7.2" letter-spacing="1.3" fill="url(#g2)" font-family="Jost"><textPath href="#circ2">ANA PERFUMARIA E COSMÉTICOS • ANA PERFUMARIA E COSMÉTICOS •</textPath></text>
+          <text x="50" y="62" text-anchor="middle" font-size="38" font-style="italic" font-family="Cormorant Garamond" fill="url(#g2)">A</text>
+        </svg>
+        <span class="marca-nome grande">Ana <span class="dourado">Cosméticos</span></span>
+      </div>
+      <div class="rodape-info">
+        <p>R. Pontes Neto, 2420 - Cacimbas</p>
+        <p>Itapipoca - CE, 62502-767</p>
+        <p>+55 (88) 9644-9335</p>
+        <p>Aberto até às 18h</p>
+      </div>
+      <div class="rodape-social">
+        <a href="https://wa.me/558896449335?text=Olá!" target="_blank" rel="noreferrer" aria-label="WhatsApp">💬</a>
+        <!-- INSTAGRAM: coloque aqui o link da sua página -->
+        <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">📷</a>
+      </div>
+    </div>
+    <p class="direitos">© <span id="ano"></span> Ana Cosméticos. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/558896449335?text=Olá%20Ana%20Cosméticos!" target="_blank" rel="noreferrer" aria-label="Conversar no WhatsApp" class="btn-whatsapp"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <!-- ===== CARRINHO ===== -->
+  <div class="carrinho-fundo" id="carrinhoFundo"></div>
+  <aside class="carrinho" id="carrinho" aria-hidden="true">
+    <div class="carrinho-topo">
+      <h3>Seu carrinho</h3>
+      <button id="fecharCarrinho" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="carrinho-itens" id="carrinhoItens"></div>
+    <div class="carrinho-rodape">
+      <p class="carrinho-total">Total de itens: <strong id="carrinhoTotal">0</strong></p>
+      <a class="btn btn-dourado" id="finalizarPedido" href="#" target="_blank" rel="noreferrer">💬 Finalizar no WhatsApp</a>
+      <button class="limpar-carrinho" id="limparCarrinho">Limpar carrinho</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
